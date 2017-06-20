@@ -21,6 +21,8 @@ function initMap(){
         document.getElementById('start').addEventListener('change', onChangeHandler);
         document.getElementById('end').addEventListener('change', onChangeHandler);
 
+    //llamando al boton ruta para que este ejecute la llamada y entregue la ruta 
+     
     function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         directionsService.route({
           origin: document.getElementById('start').value,
@@ -28,12 +30,12 @@ function initMap(){
           travelMode: 'DRIVING'
         }, function(response, status) {
           if (status === 'OK') {
+          	document.getElementById("ruta").addEventListener("click",function(){
             directionsDisplay.setDirections(response);
-          } else {
-            window.alert('Directions request failed due to ' + status);
-          }
+        	})
+          } 
         });
-      }
+      } //enlazo el boton ruta con su id para que al hacer click el boton ejecute la ruta
 	
 	function buscar(){
 		if(navigator.geolocation){
