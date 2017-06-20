@@ -22,3 +22,8 @@ button{
 button:hover, button:focus{
 	outline: 0;
 }
+
+.input{
+	margin-top: 25px; /*desplazar los input más abajo y que queden alineados con los botones*/
+}
+
