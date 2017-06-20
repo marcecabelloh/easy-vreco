@@ -9,24 +9,26 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<section class="datos">
+	<section class="datos"><!-- cree esta sección para poder cambiar fácilmente el estilo -->
 		<div class="row">
 			<div class="col-md-3 col-sm-3">
-				<button id="encuentrame">Encuéntrame</button>
+				<button id="encuentrame" class="btn btn-danger center-block">Encuéntrame</button>
 			</div>
 			<div class="col-md-3 col-sm-3">
-				<label>Origen</label>
-				<input type="" name="" class="input" placeholder="Introduce una ubicación">
+				<label class="etiqueta">Origen</label>
+				<input id="start" name="" class="input" placeholder="Introduce una ubicación">
 			</div>
 			<div class="col-md-3 col-sm-3">
-				<label>Destino</label>
-				<input type="" name="" class="input" placeholder="Introduce una ubicación">
+				<label class="etiqueta">Destino</label>
+				<input id="end" name="" class="input" placeholder="Introduce una ubicación">
 			</div>
 			<div class="col-md-3 col-sm-3">
-				<button id="ruta">Ruta</button>
+				<button id="ruta" class="btn btn-danger">Ruta</button>
 			</div>
 			
 		</div>
+	</section><!-- termino sección con inputs y botones -->
+	<section><!-- sección para el mapa -->
 		<div class="row">
 			<div class="col-md-12 col-sm-12" id="map">
 				<!-- Aquí ira nuestro mapa -->
@@ -34,8 +36,10 @@
 		</div>
 	</section>
 	
+	<!-- necesario cada de uno de estos script NECESARIO JQUERY -->
 	<script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyBBbbra2KULJN6k1lr-chTBh8KwaLwpF1c&callback=initMap&libraries=places"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJAl2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

@@ -11,7 +11,6 @@ button{
 	margin: 15px auto;
 	padding: 10px 15px;
 	color: white;
-	background-color: #faae27;
 	border: 0;
 	font-weight: 700;
 	border-radius: 2px;
@@ -23,7 +22,19 @@ button:hover, button:focus{
 	outline: 0;
 }
 
+/*desplazar los input más abajo y que queden alineados con los botones*/
 .input{
-	margin-top: 25px; /*desplazar los input más abajo y que queden alineados con los botones*/
+	margin-top: 25px; 
+}
+
+/*estilo a section datos donde están los botones y los input*/
+.datos{
+	padding: 30px;
+	background-color: black;
+}
+
+/*edito color de las label o etiquetas a blanco*/
+.etiqueta{
+	color: white;
 }
 
